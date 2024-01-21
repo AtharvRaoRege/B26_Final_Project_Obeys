@@ -1,11 +1,12 @@
 @font-face {
-  font-family: silkserife; 
+  font-family: silkserif; 
   src: url(./plain-regular-webfont.ttf);
 }
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
+  color:white;
 }
 html,body{
   font-family:Gilroy;
@@ -13,17 +14,57 @@ html,body{
   width:100%;
 }
 .page1{
-    height: 100vh;
-    width: 100%;
-    background-color: #101010;
+  height: 100vh;
+  width: 100%;
+  background-color: #0B0B0B;
+  display: flex;
+  /* display: flex-start;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center; */
+  /* padding: 8vw 4vw; */
+  /* display: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
 }
-.page2{
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(251, 0, 0);
+.loaderpage{
+  width: 100%;
+  position: absolute;
+  top: 40%; left: 50%;
+  transform: translate(-50%,-50%);
+  /* margin-left:2vw;   */
 }
-.page3{
-    height: 100vh;
-    width: 100%;
-    background-color: #0000ff;
+h1,h3{
+  text-transform: uppercase;
+  font-family: silkserif;
+}
+.page1 h1{
+  font-size: 7.8vw;
+}
+.page1 .load1:nth-child(1){
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+}
+.page1 .load1:nth-child(1) h3{
+  font-size: 3vw;
+  font-weight: 100;
+  font-family:silk serif;
+} 
+.page1 .load1:nth-child(1) h2{
+  font-weight: 100;
+  font-size: 3vw;
+  font-family:silk serif;
+} 
+.load1{
+  margin-left:3vw;
+}
+.loadd{
+  margin-top: -5vh;
+  /* background-color: grey; */
+  width: 13vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
