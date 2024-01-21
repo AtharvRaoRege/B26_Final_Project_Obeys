@@ -1,0 +1,25 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html,body{
+  font-family:Gilroy;
+  height:100%;
+  width:100%;
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #101010;
+}
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(251, 0, 0);
+}
+.page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #0000ff;
+}
