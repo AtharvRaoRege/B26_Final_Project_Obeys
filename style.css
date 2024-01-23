@@ -1,19 +1,23 @@
 @font-face {
-  font-family: silkserif; 
+  font-family: silkserif;
   src: url(./plain-regular-webfont.ttf);
 }
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  color:white;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
 }
-html,body{
-  font-family:Gilroy;
-  height:100%;
-  width:100%;
+
+html,
+body {
+  font-family: Gilroy;
+  height: 100%;
+  width: 100%;
 }
-.page1{
+
+.page1 {
   height: 100vh;
   width: 100%;
   background-color: #0B0B0B;
@@ -28,43 +32,85 @@ html,body{
   justify-content: center;
   align-items: center; */
 }
-.loaderpage{
+
+.loaderpage {
   width: 100%;
   position: absolute;
-  top: 40%; left: 50%;
-  transform: translate(-50%,-50%);
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   /* margin-left:2vw;   */
 }
-h1,h3{
+
+h1,
+h3 {
   text-transform: uppercase;
   font-family: silkserif;
 }
-.page1 h1{
+
+.page1 h1 {
   font-size: 7.8vw;
 }
-.page1 .load1:nth-child(1){
+
+.page1 .load1:nth-child(1) {
   display: flex;
   align-items: center;
   gap: 5vw;
 }
-.page1 .load1:nth-child(1) h3{
+
+.page1 .load1:nth-child(1) h3 {
   font-size: 3vw;
   font-weight: 100;
-  font-family:silk serif;
-} 
-.page1 .load1:nth-child(1) h2{
-  font-weight: 100;
-  font-size: 3vw;
-  font-family:silk serif;
-} 
-.load1{
-  margin-left:3vw;
+  font-family: silk serif;
 }
-.loadd{
+
+.page1 .load1:nth-child(1) h2 {
+  font-weight: 100;
+  font-size: 3vw;
+  font-family: silk serif;
+}
+
+.load1 {
+  margin-left: 3vw;
+}
+
+.loadd {
   margin-top: -5vh;
   /* background-color: grey; */
   width: 13vw;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+span{
+  animation-name: anime;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+  0%{
+    font-family: silkserif;
+    opacity: 1;
+  }
+  45%{
+    font-family: silk serif;
+    -webkit-text-stroke: 1px transparent;
+    color: white;
+    opacity: 0;
+  }
+  50%{
+    font-family: silkserif;
+    opacity: 1;
+  }
+  95%{
+    font-family: silk serif;
+    -webkit-text-stroke: 1px transparent;
+    color: white;
+    opacity: 0;
+  }
+  100%{
+    font-family: silkserif;
+    opacity: 1;
+  }
 }

@@ -12,4 +12,4 @@ let det = 0
         det++;
         loader.innerHTML = det;
     }
-},40)
+},40) 
