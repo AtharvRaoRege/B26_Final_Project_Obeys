@@ -17,29 +17,38 @@ body {
   width: 100%;
 }
 
+/* .main {
+  position: relative;
+  overflow: hidden;
+  background: #000;
+} */
+
 .page1 {
   height: 100vh;
+  z-index: -1;
   width: 100%;
-  background-color: #0B0B0B;
+  background-color: #151515;
   display: flex;
-  /* display: flex-start;
-  flex-direction: column;
-  justify-content:center;
-  align-items: center; */
-  /* padding: 8vw 4vw; */
-  /* display: flex-start;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
 
 .loaderpage {
+  height: 100vh;
   width: 100%;
+  background-color: black;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8vh 0;
   position: absolute;
+  top: 0;
+  left: 0;
+  /* margin-top: -10vh; */
+  /* position: absolute;
   top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* margin-left:2vw;   */
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
 }
 
 h1,
@@ -48,69 +57,107 @@ h3 {
   font-family: silkserif;
 }
 
-.page1 h1 {
+.loaderpage h1 {
   font-size: 7.8vw;
 }
 
-.page1 .load1:nth-child(1) {
+.load1:nth-child(1) {
   display: flex;
   align-items: center;
   gap: 5vw;
 }
 
-.page1 .load1:nth-child(1) h3 {
+.load1:nth-child(1) h3 {
   font-size: 3vw;
   font-weight: 100;
   font-family: silk serif;
 }
 
-.page1 .load1:nth-child(1) h2 {
+.load1:nth-child(1) h2 {
   font-weight: 100;
   font-size: 3vw;
   font-family: silk serif;
+}
+
+.load1:nth-child(3) h1 {
+  margin-top: -3vw;
+  height: 16vw;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
 }
 
 .load1 {
+  /* height: 3vw; */
+  /* margin-top: 1vh; */
   margin-left: 3vw;
 }
 
+/* .load1:nth-child(3){
+  height: 15vw;
+  display: flex;
+  align-items: center;
+} */
+
 .loadd {
-  margin-top: -5vh;
+  margin-top: -2vw;
   /* background-color: grey; */
   width: 13vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-span{
+
+span {
+  /* padding: 1vh 0; */
   animation-name: anime;
-  animation-duration: 10s;
+  animation-duration: 1.8s;
   animation-iteration-count: infinite;
 }
 
+.loaderpage p {
+  font-size: 1vw;
+  margin-left: 19vw;
+}
+
 @keyframes anime {
-  0%{
+  0% {
+    font-weight: 100;
     font-family: silkserif;
     opacity: 1;
-  }
-  45%{
-    font-family: silk serif;
     -webkit-text-stroke: 1px transparent;
+    color: white;
+  }
+
+  45% {
+    font-family: silkserif;
+    -webkit-text-stroke: 1px transparent;
+    font-weight: 100;
     color: white;
     opacity: 0;
   }
-  50%{
-    font-family: silkserif;
-    opacity: 1;
-  }
-  95%{
+
+  50% {
     font-family: silk serif;
-    -webkit-text-stroke: 1px transparent;
-    color: white;
+    opacity: 1;
+    font-weight: 100;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+  }
+
+  95% {
+    font-family: silk serif;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    font-weight: 100;
     opacity: 0;
   }
-  100%{
+
+  100% {
     font-family: silkserif;
+    -webkit-text-stroke: 1px transparent;
+    color: white;
     opacity: 1;
+    font-weight: 100;
   }
 }
